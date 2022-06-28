@@ -18,13 +18,11 @@ const {decrypt, encrypt} = require('./commands/encryptest.js');
 
 wss.on('connection', function(ws) {
     console.log('/foo connected');
-    ws.send("123");
-
     ws.on('message', function(data, flags) {
       console.log(data)
-      // const msg = JSON.parse(decrypt(data));
-        //console.log(msg)
-        //getcommand(msg,ws);
+      const msg = JSON.parse(decrypt(data));
+        console.log(msg)
+        getcommand(msg,ws);
         ws.send("123");
     });
     ws.on('close', function() {
