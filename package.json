@@ -1,0 +1,25 @@
+{
+  "name": "easywsclient",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "nodemon example-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dhbaird/easywsclient.git"
+  },
+  "author": "David Baird <dhbaird@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhbaird/easywsclient/issues"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.18",
+    "typeorm": "^0.3.6",
+    "ws": "^7.0.0"
+  }
+}
